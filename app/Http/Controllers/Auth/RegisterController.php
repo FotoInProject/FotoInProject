@@ -59,7 +59,6 @@ class RegisterController extends Controller
             'birthdate' => 'required|string|max:255',
             'gender' => 'required|string',
             'avatar' => 'required|string',
-            'role' => 'required|string',
         ]);
     }
 
@@ -84,7 +83,6 @@ class RegisterController extends Controller
             'birthdate' => $data['birthdate'],
             'gender' => $data['gender'],
             'avatar' => $data['avatar'],
-            'role' => $data['role'],
         ]);
     }
 }
