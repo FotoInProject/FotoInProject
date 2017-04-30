@@ -1,0 +1,37 @@
+#auth .header{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#auth .header h1{
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+#auth .logo{
+  text-align: center;
+}
+#auth .logo a{
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #00cc99;
+  font-size: 30px;
+
+}
+
+#auth .have-account{
+  text-align: center;
+}
+
+#auth .privacy-police{
+  font-size: 11px;
+}
+
+#auth #form-login{
+  display: none;
+}
+
+#auth #form-login:target{
+  display:inherit;
+}
