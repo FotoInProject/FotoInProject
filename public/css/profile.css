@@ -1,0 +1,25 @@
+#profile .side-tab{
+  background-color: red;
+  width: 10%;
+  float: left;
+}
+
+#profile .side-tab button{
+  width: 100%;
+}
+
+#profile .content-profile{
+  float: left;
+  width: 70%;
+  background-color: white;
+  border: 1px solid #00b386;
+  height: 500px;
+}
+
+#profile .photo-profile{
+  float: left;
+  width: 20%;
+  background-color: white;
+  border: 1px solid #00b386;
+  height: 500px;
+}

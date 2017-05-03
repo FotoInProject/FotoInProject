@@ -16,6 +16,8 @@
     <link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
     <link href="{{ asset('css/global.css') }}" rel="stylesheet">
     <link href="{{ asset('css/auth-form.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/profile.css') }}" rel="stylesheet">
+
 
     <!-- Scripts -->
     <script>
