@@ -2,15 +2,13 @@
 @section('content')
 
 <div class="container-fluid" id="profile">
-  <p>Nama</p>
-  <div class="side-tab">
-    <button type="button" class="btn btn-primary" name="button">Biodata Diri</button>
-    <button type="button" class="btn btn-primary" name="button">Alamat</button>
-    <button type="button" class="btn btn-primary" name="button">Rekening Bank</button>
+  <div class="name-profile col-md-2">
+    <p><span class="glyphicon glyphicon-user"> {{ Auth::user()->name }}</span></p>
   </div>
-  <div class="content-profile">
-
+  <div class="status-profile col-md-10">
+    <p><kbd>{{ Auth::user()->status }}</kbd></p>
   </div>
+  <profiletab></profiletab>
   <div class="photo-profile">
 
   </div>

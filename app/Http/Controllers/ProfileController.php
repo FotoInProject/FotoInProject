@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class ProfileController extends Controller
 {
@@ -14,8 +15,8 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        User::all();
-        return view('profile/profile');
+        $userid = Auth::user();
+        return $userid;
     }
 
     /**
@@ -70,7 +71,14 @@ class ProfileController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::find($id);
+        $user->name = $request->name;
+        $user->birthdate = $request->birthdate;
+        $user->gender = $request->gender;
+
+        $user->save();
+
+        return "success";
     }
 
     /**

@@ -16,6 +16,8 @@ window.Vue = require('vue');
  */
 
 Vue.component('example', require('./components/Example.vue'));
+Vue.component('personaldata', require('./components/profile/PersonalData.vue'));
+Vue.component('profiletab', require('./components/profile/ProfileTab.vue'));
 
 const app = new Vue({
     el: '#app'

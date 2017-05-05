@@ -1,3 +1,18 @@
+#profile .name-profile{
+  color: #00b386;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+#profile .status-profile{
+  color: #00b386;
+  font-size: 15px;
+  text-transform: capitalize;
+  text-align: right;
+  display: block;
+}
+
 #profile .side-tab{
   background-color: red;
   width: 10%;
@@ -6,6 +21,7 @@
 
 #profile .side-tab button{
   width: 100%;
+  float: left;
 }
 
 #profile .content-profile{
@@ -14,6 +30,8 @@
   background-color: white;
   border: 1px solid #00b386;
   height: 500px;
+  padding-top: 5%;
+  padding-left: 5%;
 }
 
 #profile .photo-profile{

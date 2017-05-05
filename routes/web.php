@@ -18,4 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-Route::resource('/profile', 'ProfileController');
+
+Route::get('/profile', function () {
+    return view('profile/profile');
+});
+Route::resource('/profile-api', 'ProfileController');
