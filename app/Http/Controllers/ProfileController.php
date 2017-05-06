@@ -75,6 +75,12 @@ class ProfileController extends Controller
         $user->name = $request->name;
         $user->birthdate = $request->birthdate;
         $user->gender = $request->gender;
+        $user->province = $request->province;
+        $user->city = $request->city;
+        $user->districts = $request->districts;
+        $user->address = $request->address;
+        $user->postcode = $request->postcode;
+        $user->phone = $request->phone;
 
         $user->save();
 
