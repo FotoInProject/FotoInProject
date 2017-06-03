@@ -23,3 +23,4 @@ Route::get('/profile', function () {
     return view('profile/profile');
 });
 Route::resource('/profile-api', 'ProfileController');
+Route::post('/avatar-upload', 'ProfileController@avatarupload');

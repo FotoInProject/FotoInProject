@@ -1,8 +1,8 @@
 <template lang="html">
   <form class="form-horizontal" method="post">
     <div class="form-group">
-        <label for="name" class="col-md-2 control-label">Provinsi</label>
-        <div class="col-md-4">
+        <label for="name" class="col-md-3 control-label">Provinsi</label>
+        <div class="col-md-8">
           <select v-show="!showEdit(profiles.id)" class="form-control" name="province" disabled>
             <option>{{profiles.province}}</option>
           </select>
@@ -13,8 +13,8 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="name" class="col-md-2 control-label">Kota/Kabupaten</label>
-        <div class="col-md-4">
+        <label for="name" class="col-md-3 control-label">Kota/Kabupaten</label>
+        <div class="col-md-8">
           <select v-show="!showEdit(profiles.id)" class="form-control" name="city" disabled>
             <option>{{profiles.city}}</option>
           </select>
@@ -25,8 +25,8 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="name" class="col-md-2 control-label">Kecamatan</label>
-        <div class="col-md-4">
+        <label for="name" class="col-md-3 control-label">Kecamatan</label>
+        <div class="col-md-8">
           <select v-show="!showEdit(profiles.id)" class="form-control" name="districts" disabled>
             <option>{{profiles.districts}}</option>
           </select>
@@ -40,38 +40,31 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="name" class="col-md-2 control-label">Alamat</label>
-        <div class="col-md-4">
+        <label for="name" class="col-md-3 control-label">Alamat</label>
+        <div class="col-md-8">
           <textarea v-show="!showEdit(profiles.id)" v-model="profiles.address" name="address" rows="3" cols="80" class="form-control" disabled></textarea>
           <textarea v-show="showEdit(profiles.id)" v-model="editData.address" name="address" rows="3" cols="80" class="form-control" required></textarea>
         </div>
     </div>
     <div class="form-group">
-        <label for="name" class="col-md-2 control-label">Kode Post</label>
-        <div class="col-md-4">
+        <label for="name" class="col-md-3 control-label">Kode Post</label>
+        <div class="col-md-8">
           <input v-show="!showEdit(profiles.id)" v-model="profiles.postcode" name="postcode" type="number" class="form-control" disabled />
           <input v-show="showEdit(profiles.id)" v-model="editData.postcode" name="postcode" type="number" class="form-control" required/>
         </div>
     </div>
     <div class="form-group">
-        <label for="name" class="col-md-2 control-label">No. Handphone</label>
-        <div class="col-md-4">
-          <input v-show="!showEdit(profiles.id)" v-model="profiles.phone" name="phone" type="number" class="form-control" disabled />
-          <input v-show="showEdit(profiles.id)" v-model="editData.phone" name="phone" type="number" class="form-control" required/>
-        </div>
-    </div>
-    <div class="form-group">
-        <div v-show="!showEdit(profiles.id)" class="col-md-offset-2 col-md-4">
+        <div v-show="!showEdit(profiles.id)" class="col-md-offset-3 col-md-8">
             <button  @click="editIt(profiles.id)" type="button" class="btn btn-primary btn-block" >
                 Ubah
             </button>
         </div>
-        <div v-show="showEdit(profiles.id)" class="col-md-offset-2 col-md-2">
+        <div v-show="showEdit(profiles.id)" class="col-md-offset-3 col-md-4">
           <button @click.prevent="editForm=false" type="submit" class="btn btn-danger btn-block">
               Batal
           </button>
         </div>
-        <div v-show="showEdit(profiles.id)" class="col-md-2">
+        <div v-show="showEdit(profiles.id)" class="col-md-4">
           <button @click="updateIt(profiles.id)" type="button" class="btn btn-primary btn-block">
               Simpan
           </button>
@@ -95,7 +88,6 @@ export default {
         districts:'',
         address:'',
         postcode:'',
-        phone:'',
       }
     }
   },

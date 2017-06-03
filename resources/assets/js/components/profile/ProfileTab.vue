@@ -7,12 +7,10 @@
       <button @click="clickTab(4)" type="button" class="btn btn-primary" name="button">Rekening Bank</button>
     </div>
     <div class="content-profile">
-      <div class="container">
         <personaldata v-show="showContentProfile(1)"></personaldata>
         <addressdata v-show="showContentProfile(2)"></addressdata>
         <addressdata v-show="showContentProfile(3)"></addressdata>
         <addressdata v-show="showContentProfile(4)"></addressdata>
-      </div>
     </div>
   </div>
 </template>

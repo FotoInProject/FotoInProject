@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
+use Carbon\Carbon;
+use Image;
+use File;
 
 class ProfileController extends Controller
 {
@@ -97,4 +101,37 @@ class ProfileController extends Controller
     {
         //
     }
+
+    public function showAvatar($value='')
+    {
+      # code...
+    }
+
+    public function avatarupload(Request $request)
+    {
+
+          $this->validate($request, [
+                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            ]);
+
+          $useravatar = Auth::user()->avatar;
+          File::delete('images/' . $useravatar);
+
+          $imageName = time().'.'.$request->image->getClientOriginalExtension();
+          $path = public_path('images');
+          $request->image->move($path,$imageName);
+
+          //put image path into database
+          $userid = Auth::user()->id;
+          $user = User::find($userid);
+          $user->avatar = $imageName;
+          $user->save();
+
+          return back()
+            ->with('success','Image Uploaded successfully.')
+            ->with('path',$imageName);
+    }
+
+
+
 }

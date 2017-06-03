@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 57);
+/******/ 	return __webpack_require__(__webpack_require__.s = 60);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -528,7 +528,7 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 
 module.exports = defaults;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(42)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(43)))
 
 /***/ }),
 /* 3 */
@@ -606,7 +606,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(54)
+var listToStyles = __webpack_require__(57)
 
 /*
 type StyleObject = {
@@ -1109,9 +1109,9 @@ module.exports = g;
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-__webpack_require__(35);
+__webpack_require__(36);
 
-window.Vue = __webpack_require__(55);
+window.Vue = __webpack_require__(58);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -1119,10 +1119,10 @@ window.Vue = __webpack_require__(55);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', __webpack_require__(43));
-Vue.component('profiletab', __webpack_require__(46));
-Vue.component('personaldata', __webpack_require__(45));
-Vue.component('addressdata', __webpack_require__(44));
+Vue.component('example', __webpack_require__(44));
+Vue.component('profiletab', __webpack_require__(48));
+Vue.component('personaldata', __webpack_require__(47));
+Vue.component('addressdata', __webpack_require__(45));
 
 var app = new Vue({
   el: '#app'
@@ -2086,13 +2086,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2106,8 +2099,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         city: '',
         districts: '',
         address: '',
-        postcode: '',
-        phone: ''
+        postcode: ''
       }
     };
   },
@@ -2153,11 +2145,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 33 */
+/* 33 */,
+/* 34 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2219,7 +2220,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       editData: {
         nama: '',
         birthdate: '',
-        gender: ''
+        gender: '',
+        phone: ''
       }
     };
   },
@@ -2265,13 +2267,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
 //
 //
 //
@@ -2315,11 +2315,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-window._ = __webpack_require__(41);
+window._ = __webpack_require__(42);
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -2328,9 +2328,9 @@ window._ = __webpack_require__(41);
  */
 
 try {
-  window.$ = window.jQuery = __webpack_require__(40);
+  window.$ = window.jQuery = __webpack_require__(41);
 
-  __webpack_require__(36);
+  __webpack_require__(37);
 } catch (e) {}
 
 /**
@@ -2340,7 +2340,10 @@ try {
  */
 
 window.axios = __webpack_require__(13);
-
+window.axios.defaults.headers.common = {
+  'X-CSRF-TOKEN': window.Laravel.csrfToken,
+  'X-Requested-With': 'XMLHttpRequest'
+};
 window.axios.defaults.headers.common['X-CSRF-TOKEN'] = window.Laravel.csrfToken;
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
@@ -2360,7 +2363,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 // });
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports) {
 
 /*!
@@ -4743,28 +4746,28 @@ if (typeof jQuery === 'undefined') {
 
 
 /***/ }),
-/* 37 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(3)();
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
-
-/***/ }),
 /* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)();
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 /***/ }),
 /* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)();
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 /***/ }),
 /* 40 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)();
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+/***/ }),
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -15024,7 +15027,7 @@ return jQuery;
 
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -32113,10 +32116,10 @@ return jQuery;
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10), __webpack_require__(56)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10), __webpack_require__(59)(module)))
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -32306,14 +32309,14 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(31),
   /* template */
-  __webpack_require__(47),
+  __webpack_require__(49),
   /* scopeId */
   null,
   /* cssModules */
@@ -32340,18 +32343,18 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(52)
+__webpack_require__(55)
 
 var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(32),
   /* template */
-  __webpack_require__(49),
+  __webpack_require__(51),
   /* scopeId */
   null,
   /* cssModules */
@@ -32378,18 +32381,19 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 45 */
+/* 46 */,
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(51)
+__webpack_require__(54)
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(33),
+  __webpack_require__(34),
   /* template */
-  __webpack_require__(48),
+  __webpack_require__(50),
   /* scopeId */
   null,
   /* cssModules */
@@ -32416,18 +32420,18 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 46 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(53)
+__webpack_require__(56)
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(34),
+  __webpack_require__(35),
   /* template */
-  __webpack_require__(50),
+  __webpack_require__(53),
   /* scopeId */
   null,
   /* cssModules */
@@ -32454,7 +32458,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 47 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -32483,7 +32487,7 @@ if (false) {
 }
 
 /***/ }),
-/* 48 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -32495,12 +32499,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "form-group"
   }, [_c('label', {
-    staticClass: "col-md-2 control-label",
+    staticClass: "col-md-3 control-label",
     attrs: {
       "for": "name"
     }
   }, [_vm._v("Nama")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-4"
+    staticClass: "col-md-8"
   }, [_c('input', {
     directives: [{
       name: "show",
@@ -32558,12 +32562,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   })])]), _vm._v(" "), _c('div', {
     staticClass: "form-group"
   }, [_c('label', {
-    staticClass: "col-md-2 control-label",
+    staticClass: "col-md-3 control-label",
     attrs: {
       "for": "name"
     }
   }, [_vm._v("Tanggal lahir")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-4"
+    staticClass: "col-md-8"
   }, [_c('input', {
     directives: [{
       name: "show",
@@ -32621,12 +32625,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   })])]), _vm._v(" "), _c('div', {
     staticClass: "form-group"
   }, [_c('label', {
-    staticClass: "col-md-2 control-label",
+    staticClass: "col-md-3 control-label",
     attrs: {
       "for": "name"
     }
   }, [_vm._v("Jenis Kelamin")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-4"
+    staticClass: "col-md-8"
   }, [_c('select', {
     directives: [{
       name: "show",
@@ -32669,371 +32673,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('option', [_vm._v(_vm._s(_vm.profiles.gender))]), _vm._v(" "), _c('option', [_vm._v("Laki-Laki")]), _vm._v(" "), _c('option', [_vm._v("Perempuan")])])])]), _vm._v(" "), _c('div', {
     staticClass: "form-group"
-  }, [_c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (!_vm.showEdit(_vm.profiles.id)),
-      expression: "!showEdit(profiles.id)"
-    }],
-    staticClass: "col-md-offset-2 col-md-4"
-  }, [_c('button', {
-    staticClass: "btn btn-primary btn-block",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.editIt(_vm.profiles.id)
-      }
-    }
-  }, [_vm._v("\n              Edit\n          ")])]), _vm._v(" "), _c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.showEdit(_vm.profiles.id)),
-      expression: "showEdit(profiles.id)"
-    }],
-    staticClass: "col-md-offset-2 col-md-2"
-  }, [_c('button', {
-    staticClass: "btn btn-danger btn-block",
-    attrs: {
-      "type": "submit"
-    },
-    on: {
-      "click": function($event) {
-        $event.preventDefault();
-        _vm.editForm = false
-      }
-    }
-  }, [_vm._v("\n            Batal\n        ")])]), _vm._v(" "), _c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.showEdit(_vm.profiles.id)),
-      expression: "showEdit(profiles.id)"
-    }],
-    staticClass: "col-md-2"
-  }, [_c('button', {
-    staticClass: "btn btn-primary btn-block",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.updateIt(_vm.profiles.id)
-      }
-    }
-  }, [_vm._v("\n            Simpan\n        ")])])])])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-2c328e48", module.exports)
-  }
-}
-
-/***/ }),
-/* 49 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('form', {
-    staticClass: "form-horizontal",
-    attrs: {
-      "method": "post"
-    }
-  }, [_c('div', {
-    staticClass: "form-group"
   }, [_c('label', {
-    staticClass: "col-md-2 control-label",
+    staticClass: "col-md-3 control-label",
     attrs: {
       "for": "name"
     }
-  }, [_vm._v("Provinsi")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-4"
-  }, [_c('select', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (!_vm.showEdit(_vm.profiles.id)),
-      expression: "!showEdit(profiles.id)"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "name": "province",
-      "disabled": ""
-    }
-  }, [_c('option', [_vm._v(_vm._s(_vm.profiles.province))])]), _vm._v(" "), _c('select', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.showEdit(_vm.profiles.id)),
-      expression: "showEdit(profiles.id)"
-    }, {
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.editData.province),
-      expression: "editData.province"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "name": "province",
-      "required": ""
-    },
-    on: {
-      "change": function($event) {
-        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
-          return o.selected
-        }).map(function(o) {
-          var val = "_value" in o ? o._value : o.value;
-          return val
-        });
-        _vm.editData.province = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
-      }
-    }
-  }, [_c('option', [_vm._v(_vm._s(_vm.profiles.province))]), _vm._v(" "), _c('option', [_vm._v("Kalimantan Timur")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    staticClass: "col-md-2 control-label",
-    attrs: {
-      "for": "name"
-    }
-  }, [_vm._v("Kota/Kabupaten")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-4"
-  }, [_c('select', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (!_vm.showEdit(_vm.profiles.id)),
-      expression: "!showEdit(profiles.id)"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "name": "city",
-      "disabled": ""
-    }
-  }, [_c('option', [_vm._v(_vm._s(_vm.profiles.city))])]), _vm._v(" "), _c('select', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.showEdit(_vm.profiles.id)),
-      expression: "showEdit(profiles.id)"
-    }, {
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.editData.city),
-      expression: "editData.city"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "name": "city",
-      "required": ""
-    },
-    on: {
-      "change": function($event) {
-        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
-          return o.selected
-        }).map(function(o) {
-          var val = "_value" in o ? o._value : o.value;
-          return val
-        });
-        _vm.editData.city = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
-      }
-    }
-  }, [_c('option', [_vm._v(_vm._s(_vm.profiles.city))]), _vm._v(" "), _c('option', [_vm._v("Balikpapan")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    staticClass: "col-md-2 control-label",
-    attrs: {
-      "for": "name"
-    }
-  }, [_vm._v("Kecamatan")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-4"
-  }, [_c('select', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (!_vm.showEdit(_vm.profiles.id)),
-      expression: "!showEdit(profiles.id)"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "name": "districts",
-      "disabled": ""
-    }
-  }, [_c('option', [_vm._v(_vm._s(_vm.profiles.districts))])]), _vm._v(" "), _c('select', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.showEdit(_vm.profiles.id)),
-      expression: "showEdit(profiles.id)"
-    }, {
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.editData.districts),
-      expression: "editData.districts"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "name": "districts",
-      "required": ""
-    },
-    on: {
-      "change": function($event) {
-        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
-          return o.selected
-        }).map(function(o) {
-          var val = "_value" in o ? o._value : o.value;
-          return val
-        });
-        _vm.editData.districts = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
-      }
-    }
-  }, [_c('option', [_vm._v(_vm._s(_vm.profiles.districts))]), _vm._v(" "), _c('option', [_vm._v("Balikpapan Utara")]), _vm._v(" "), _c('option', [_vm._v("Balikpapan Timur")]), _vm._v(" "), _c('option', [_vm._v("Balikpapan Selatan")]), _vm._v(" "), _c('option', [_vm._v("Balikpapan Barat")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    staticClass: "col-md-2 control-label",
-    attrs: {
-      "for": "name"
-    }
-  }, [_vm._v("Alamat")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-4"
-  }, [_c('textarea', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (!_vm.showEdit(_vm.profiles.id)),
-      expression: "!showEdit(profiles.id)"
-    }, {
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.profiles.address),
-      expression: "profiles.address"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "name": "address",
-      "rows": "3",
-      "cols": "80",
-      "disabled": ""
-    },
-    domProps: {
-      "value": (_vm.profiles.address)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.profiles.address = $event.target.value
-      }
-    }
-  }), _vm._v(" "), _c('textarea', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.showEdit(_vm.profiles.id)),
-      expression: "showEdit(profiles.id)"
-    }, {
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.editData.address),
-      expression: "editData.address"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "name": "address",
-      "rows": "3",
-      "cols": "80",
-      "required": ""
-    },
-    domProps: {
-      "value": (_vm.editData.address)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.editData.address = $event.target.value
-      }
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    staticClass: "col-md-2 control-label",
-    attrs: {
-      "for": "name"
-    }
-  }, [_vm._v("Kode Post")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-4"
-  }, [_c('input', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (!_vm.showEdit(_vm.profiles.id)),
-      expression: "!showEdit(profiles.id)"
-    }, {
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.profiles.postcode),
-      expression: "profiles.postcode"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "name": "postcode",
-      "type": "number",
-      "disabled": ""
-    },
-    domProps: {
-      "value": (_vm.profiles.postcode)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.profiles.postcode = $event.target.value
-      },
-      "blur": function($event) {
-        _vm.$forceUpdate()
-      }
-    }
-  }), _vm._v(" "), _c('input', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.showEdit(_vm.profiles.id)),
-      expression: "showEdit(profiles.id)"
-    }, {
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.editData.postcode),
-      expression: "editData.postcode"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "name": "postcode",
-      "type": "number",
-      "required": ""
-    },
-    domProps: {
-      "value": (_vm.editData.postcode)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.editData.postcode = $event.target.value
-      },
-      "blur": function($event) {
-        _vm.$forceUpdate()
-      }
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    staticClass: "col-md-2 control-label",
-    attrs: {
-      "for": "name"
-    }
-  }, [_vm._v("No. Handphone")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-4"
+  }, [_vm._v("Nomor HP")]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-8"
   }, [_c('input', {
     directives: [{
       name: "show",
@@ -33103,7 +32749,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       value: (!_vm.showEdit(_vm.profiles.id)),
       expression: "!showEdit(profiles.id)"
     }],
-    staticClass: "col-md-offset-2 col-md-4"
+    staticClass: "col-md-offset-3 col-md-8"
   }, [_c('button', {
     staticClass: "btn btn-primary btn-block",
     attrs: {
@@ -33121,7 +32767,365 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       value: (_vm.showEdit(_vm.profiles.id)),
       expression: "showEdit(profiles.id)"
     }],
-    staticClass: "col-md-offset-2 col-md-2"
+    staticClass: "col-md-offset-3 col-md-4"
+  }, [_c('button', {
+    staticClass: "btn btn-danger btn-block",
+    attrs: {
+      "type": "submit"
+    },
+    on: {
+      "click": function($event) {
+        $event.preventDefault();
+        _vm.editForm = false
+      }
+    }
+  }, [_vm._v("\n              Batal\n          ")])]), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.showEdit(_vm.profiles.id)),
+      expression: "showEdit(profiles.id)"
+    }],
+    staticClass: "col-md-4"
+  }, [_c('button', {
+    staticClass: "btn btn-primary btn-block",
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": function($event) {
+        _vm.updateIt(_vm.profiles.id)
+      }
+    }
+  }, [_vm._v("\n            Simpan\n        ")])])])])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-2c328e48", module.exports)
+  }
+}
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    staticClass: "form-horizontal",
+    attrs: {
+      "method": "post"
+    }
+  }, [_c('div', {
+    staticClass: "form-group"
+  }, [_c('label', {
+    staticClass: "col-md-3 control-label",
+    attrs: {
+      "for": "name"
+    }
+  }, [_vm._v("Provinsi")]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-8"
+  }, [_c('select', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (!_vm.showEdit(_vm.profiles.id)),
+      expression: "!showEdit(profiles.id)"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "name": "province",
+      "disabled": ""
+    }
+  }, [_c('option', [_vm._v(_vm._s(_vm.profiles.province))])]), _vm._v(" "), _c('select', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.showEdit(_vm.profiles.id)),
+      expression: "showEdit(profiles.id)"
+    }, {
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.editData.province),
+      expression: "editData.province"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "name": "province",
+      "required": ""
+    },
+    on: {
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.editData.province = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+      }
+    }
+  }, [_c('option', [_vm._v(_vm._s(_vm.profiles.province))]), _vm._v(" "), _c('option', [_vm._v("Kalimantan Timur")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('label', {
+    staticClass: "col-md-3 control-label",
+    attrs: {
+      "for": "name"
+    }
+  }, [_vm._v("Kota/Kabupaten")]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-8"
+  }, [_c('select', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (!_vm.showEdit(_vm.profiles.id)),
+      expression: "!showEdit(profiles.id)"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "name": "city",
+      "disabled": ""
+    }
+  }, [_c('option', [_vm._v(_vm._s(_vm.profiles.city))])]), _vm._v(" "), _c('select', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.showEdit(_vm.profiles.id)),
+      expression: "showEdit(profiles.id)"
+    }, {
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.editData.city),
+      expression: "editData.city"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "name": "city",
+      "required": ""
+    },
+    on: {
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.editData.city = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+      }
+    }
+  }, [_c('option', [_vm._v(_vm._s(_vm.profiles.city))]), _vm._v(" "), _c('option', [_vm._v("Balikpapan")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('label', {
+    staticClass: "col-md-3 control-label",
+    attrs: {
+      "for": "name"
+    }
+  }, [_vm._v("Kecamatan")]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-8"
+  }, [_c('select', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (!_vm.showEdit(_vm.profiles.id)),
+      expression: "!showEdit(profiles.id)"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "name": "districts",
+      "disabled": ""
+    }
+  }, [_c('option', [_vm._v(_vm._s(_vm.profiles.districts))])]), _vm._v(" "), _c('select', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.showEdit(_vm.profiles.id)),
+      expression: "showEdit(profiles.id)"
+    }, {
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.editData.districts),
+      expression: "editData.districts"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "name": "districts",
+      "required": ""
+    },
+    on: {
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.editData.districts = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+      }
+    }
+  }, [_c('option', [_vm._v(_vm._s(_vm.profiles.districts))]), _vm._v(" "), _c('option', [_vm._v("Balikpapan Utara")]), _vm._v(" "), _c('option', [_vm._v("Balikpapan Timur")]), _vm._v(" "), _c('option', [_vm._v("Balikpapan Selatan")]), _vm._v(" "), _c('option', [_vm._v("Balikpapan Barat")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('label', {
+    staticClass: "col-md-3 control-label",
+    attrs: {
+      "for": "name"
+    }
+  }, [_vm._v("Alamat")]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-8"
+  }, [_c('textarea', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (!_vm.showEdit(_vm.profiles.id)),
+      expression: "!showEdit(profiles.id)"
+    }, {
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.profiles.address),
+      expression: "profiles.address"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "name": "address",
+      "rows": "3",
+      "cols": "80",
+      "disabled": ""
+    },
+    domProps: {
+      "value": (_vm.profiles.address)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.profiles.address = $event.target.value
+      }
+    }
+  }), _vm._v(" "), _c('textarea', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.showEdit(_vm.profiles.id)),
+      expression: "showEdit(profiles.id)"
+    }, {
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.editData.address),
+      expression: "editData.address"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "name": "address",
+      "rows": "3",
+      "cols": "80",
+      "required": ""
+    },
+    domProps: {
+      "value": (_vm.editData.address)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.editData.address = $event.target.value
+      }
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('label', {
+    staticClass: "col-md-3 control-label",
+    attrs: {
+      "for": "name"
+    }
+  }, [_vm._v("Kode Post")]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-8"
+  }, [_c('input', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (!_vm.showEdit(_vm.profiles.id)),
+      expression: "!showEdit(profiles.id)"
+    }, {
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.profiles.postcode),
+      expression: "profiles.postcode"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "name": "postcode",
+      "type": "number",
+      "disabled": ""
+    },
+    domProps: {
+      "value": (_vm.profiles.postcode)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.profiles.postcode = $event.target.value
+      },
+      "blur": function($event) {
+        _vm.$forceUpdate()
+      }
+    }
+  }), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.showEdit(_vm.profiles.id)),
+      expression: "showEdit(profiles.id)"
+    }, {
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.editData.postcode),
+      expression: "editData.postcode"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "name": "postcode",
+      "type": "number",
+      "required": ""
+    },
+    domProps: {
+      "value": (_vm.editData.postcode)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.editData.postcode = $event.target.value
+      },
+      "blur": function($event) {
+        _vm.$forceUpdate()
+      }
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (!_vm.showEdit(_vm.profiles.id)),
+      expression: "!showEdit(profiles.id)"
+    }],
+    staticClass: "col-md-offset-3 col-md-8"
+  }, [_c('button', {
+    staticClass: "btn btn-primary btn-block",
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": function($event) {
+        _vm.editIt(_vm.profiles.id)
+      }
+    }
+  }, [_vm._v("\n              Ubah\n          ")])]), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.showEdit(_vm.profiles.id)),
+      expression: "showEdit(profiles.id)"
+    }],
+    staticClass: "col-md-offset-3 col-md-4"
   }, [_c('button', {
     staticClass: "btn btn-danger btn-block",
     attrs: {
@@ -33140,7 +33144,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       value: (_vm.showEdit(_vm.profiles.id)),
       expression: "showEdit(profiles.id)"
     }],
-    staticClass: "col-md-2"
+    staticClass: "col-md-4"
   }, [_c('button', {
     staticClass: "btn btn-primary btn-block",
     attrs: {
@@ -33162,7 +33166,8 @@ if (false) {
 }
 
 /***/ }),
-/* 50 */
+/* 52 */,
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -33214,8 +33219,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Rekening Bank")])]), _vm._v(" "), _c('div', {
     staticClass: "content-profile"
-  }, [_c('div', {
-    staticClass: "container"
   }, [_c('personaldata', {
     directives: [{
       name: "show",
@@ -33244,7 +33247,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       value: (_vm.showContentProfile(4)),
       expression: "showContentProfile(4)"
     }]
-  })], 1)])])
+  })], 1)])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -33255,13 +33258,13 @@ if (false) {
 }
 
 /***/ }),
-/* 51 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(37);
+var content = __webpack_require__(38);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -33281,13 +33284,13 @@ if(false) {
 }
 
 /***/ }),
-/* 52 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(38);
+var content = __webpack_require__(39);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -33307,13 +33310,13 @@ if(false) {
 }
 
 /***/ }),
-/* 53 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(39);
+var content = __webpack_require__(40);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -33333,7 +33336,7 @@ if(false) {
 }
 
 /***/ }),
-/* 54 */
+/* 57 */
 /***/ (function(module, exports) {
 
 /**
@@ -33366,7 +33369,7 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 55 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43004,7 +43007,7 @@ module.exports = Vue$3;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10)))
 
 /***/ }),
-/* 56 */
+/* 59 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -43032,7 +43035,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 57 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(11);

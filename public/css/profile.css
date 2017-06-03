@@ -32,9 +32,10 @@
   height: 500px;
   padding-top: 5%;
   padding-left: 5%;
+  padding-right: 5%;
 }
 
-#profile .photo-profile{
+#profile .avatar-upload{
   float: left;
   width: 20%;
   background-color: white;

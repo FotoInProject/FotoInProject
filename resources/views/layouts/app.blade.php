@@ -17,6 +17,7 @@
     <link href="{{ asset('css/global.css') }}" rel="stylesheet">
     <link href="{{ asset('css/auth-form.css') }}" rel="stylesheet">
     <link href="{{ asset('css/profile.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/avatar-upload.css') }}" rel="stylesheet">
 
 
     <!-- Scripts -->
