@@ -75,8 +75,8 @@
                             <div class="col-md-12">
                               <select class="form-control" name="gender" required autofocus="">
                                 <option value=""></option>
-                                <option value="man">Laki-laki</option>
-                                <option value="woman">Perempuan</option>
+                                <option value="Laki-laki">Laki-laki</option>
+                                <option value="Perempuan">Perempuan</option>
                               </select>
                             </div>
                         </div>

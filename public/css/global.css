@@ -9,3 +9,10 @@
   background-color: #00b386;
   border-color: #00b386;
 }
+
+.btn-danger{
+  /*background-color: #00cc99;
+  border-color: #00b386;*/
+  border-radius: 0px;
+  font-weight: bold;
+}
