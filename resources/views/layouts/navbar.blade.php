@@ -98,12 +98,10 @@
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
 
-                        <ul class="dropdown-menu" role="menu">
-                          
-                          <li>
-                            <a href="/profile">Profile</a>
-                          </li>
-
+                          <ul class="dropdown-menu" role="menu">
+                            <li>
+                              <a href="/profile">Profile</a>
+                            </li>
                             <li>
                                 <a href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
@@ -115,7 +113,21 @@
                                     {{ csrf_field() }}
                                 </form>
                             </li>
-                        </ul>
+                          </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle"  id="" data-toggle="dropdown">
+                        Admin
+                        <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="">
+                        <li>
+                          <a href="/service">Service</a>
+                        </li>
+                        <li>
+                          <a href="/user">User</a>
+                        </li>
+                      </ul>
                     </li>
                 @endif
             </ul>
