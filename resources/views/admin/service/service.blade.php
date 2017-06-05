@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="container-fluid">
-  <h2>Dynamic Tabs</h2>
+  <h2>Services</h2>
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#menu1">Service</a></li>
     <li><a data-toggle="tab" href="#menu2">Service Provider</a></li>
@@ -13,7 +13,7 @@
       <service></service>
     </div>
     <div id="menu2" class="tab-pane fade">
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <serviceprovider></serviceprovider>
     </div>
   </div>
 </div>

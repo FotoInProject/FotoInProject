@@ -31,3 +31,9 @@ Route::get('/service', function () {
     return view('admin/service/service');
 });
 Route::resource('/service-api', 'ServiceController');
+
+//Service Provider route
+Route::resource('/serviceprovider-api', 'ServiceProviderController');
+
+//User Route
+Route::resource('/user-api', 'UserController');

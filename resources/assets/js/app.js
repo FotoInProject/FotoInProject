@@ -22,6 +22,7 @@ Vue.component('personaldata', require('./components/profile/PersonalData.vue'));
 Vue.component('addressdata', require('./components/profile/AddressData.vue'));
 
 Vue.component('service', require('./components/admin/service/Service.vue'));
+Vue.component('serviceprovider', require('./components/admin/service/ServiceProvider.vue'));
 
 
 const app = new Vue({
